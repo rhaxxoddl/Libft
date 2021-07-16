@@ -2,21 +2,21 @@
 C 프로그래밍을 하면서 자주 사용할 함수 구현
 
 ### libc functions
-memset
-bzero
-memcpy
-memccpy
-memmove
-memchr
-memcmp
-strlen
-strlcpy
-strlcat
-strchr
-strrchr
-strnstr
-strncmp
-atoi
+memset\n
+bzero\n
+memcpy\n
+memccpy\n
+memmove\n
+memchr\n
+memcmp\n
+strlen\n
+strlcpy\n
+strlcat\n
+strchr\n
+strrchr\n
+strnstr\n
+strncmp\n
+atoi\n
 isalpha
 isdigit
 isalnum
