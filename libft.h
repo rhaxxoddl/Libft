@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sanjeon <sanjeon@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: sanjeon <sanjeon@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/24 01:02:59 by sanjeon           #+#    #+#             */
-/*   Updated: 2021/07/18 11:11:15 by sanjeon          ###   ########.fr       */
+/*   Updated: 2021/08/20 08:44:36 by sanjeon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ int					ft_isdigit(int c);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isprint(int c);
+int					ft_isspace(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 void				*ft_calloc(size_t nmemb, size_t size);
