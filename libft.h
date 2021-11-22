@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sanjeon <sanjeon@student.42.kr>            +#+  +:+       +#+        */
+/*   By: sanjeon <sanjeon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/24 01:02:59 by sanjeon           #+#    #+#             */
-/*   Updated: 2021/08/20 08:44:36 by sanjeon          ###   ########.fr       */
+/*   Updated: 2021/10/25 14:22:13 by sanjeon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-typedef struct		s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}					t_list;
+}				t_list;
 
 void				*ft_memcpy(void *dest, const void *src, size_t n);
 void				*ft_memmove(void *dest, const void *src, size_t n);
@@ -67,6 +67,5 @@ void				ft_lstdelone(t_list	*lst, void (*del)(void*));
 void				ft_lstclear(t_list **lst, void (*del)(void*));
 void				ft_lstiter(t_list *lst, void (*f)(void*));
 t_list				*ft_lstmap(t_list *lst, void *(f)(void*),
-										void (*del)(void*));
-
+						void (*del)(void*));
 #endif

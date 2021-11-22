@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atol.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sanjeon <sanjeon@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: sanjeon <sanjeon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/18 11:09:41 by sanjeon           #+#    #+#             */
-/*   Updated: 2021/07/18 11:10:30 by sanjeon          ###   ########.fr       */
+/*   Updated: 2021/10/25 16:46:27 by sanjeon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long long		ft_atol(const char *nptr)
+long long	ft_atol(const char *nptr)
 {
 	int			i;
 	int			sign;
@@ -20,10 +20,10 @@ long long		ft_atol(const char *nptr)
 	long long	num;
 
 	i = 0;
-	str = (char*)nptr;
+	str = (char *)nptr;
 	num = 0;
 	sign = -1;
-	while((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
+	while (ft_isspace(str[i]) == 1)
 		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
@@ -31,7 +31,7 @@ long long		ft_atol(const char *nptr)
 			sign *= -1;
 		i++;
 	}
-	while(str[i] && str[i] >= 48 && str[i] <= 57)
+	while (ft_isdigit(str[i]) == 1)
 		num = num * 10 - str[i++] + '0';
-	return(sign *num);
+	return (sign * num);
 }
